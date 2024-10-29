@@ -1,9 +1,7 @@
-import discord
-from discord.ext import commands
-import random
-from flaskapp import run
+import disnake, random
+from disnake.ext import commands
 
-sukhoi = commands.Bot(command_prefix = '!',case_insensitive = True, intents=discord.Intents.all())
+sukhoi = commands.Bot(command_prefix = '!',case_insensitive = True, intents=disnake.Intents.all())
 @sukhoi.event
 async def on_ready():
 	Y = sukhoi.latency * 1000
