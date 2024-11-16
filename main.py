@@ -34,4 +34,8 @@ async def ping(ctx):
   y = round(x)
   await ctx.send(f"{y} ms")
 
+@sukhoi.command()
+async def oi(ctx):
+  await ctx.send(f'olá {ctx.mention}')
+
 sukhoi.run('token')
